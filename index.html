@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Movies Database App</title>
+</head>
+<body>
+    <section>
+        <div class="container mt=4">
+            <h1 class="display-4 text-center">
+                <ion-icon class="video-icon" name="videocam-outline"></ion-icon><span class="header1">Movie</span><span class="text-primary">Database</span><span class="header1">List</span>
+            </h1>
+            
+        </div>
+        <div class="formbox">
+            <div class="formvalue">
+                <form id="movie-form">
+                    <h2 class="formheading">Add a Movie</h2>
+                    <div class="inputbox">
+                        <ion-icon name="color-filter-outline"></ion-icon>
+                        <input type="text" name="" id="title">
+                        <label>Title</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="megaphone-outline"></ion-icon>
+                        <input type="text" name="" id="director">
+                        <label>Director</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="calendar-clear-outline"></ion-icon>
+                        <input type="text" name="" id="year">
+                        <label>Year</label>
+                    </div>
+                    <button type="submit">Add Movie</button>
+                </form>
+            </div>
+        </div>
+        <div>
+        <table class="table table-striped mt-5">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Year</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="movie-list"></tbody>
+</table>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
